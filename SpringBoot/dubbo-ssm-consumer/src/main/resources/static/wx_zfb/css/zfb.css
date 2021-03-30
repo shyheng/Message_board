@@ -1,0 +1,7 @@
+body{
+	background:radial-gradient(circle at center,red,green,blue);
+	background-size: 100%;
+}
+#imag{
+	margin-left: 500px;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8">
+		<title>表白墙</title>
+		<link rel="stylesheet" type="text/css" href="../static/date/css/data.css" th:href="@{~/date/css/data.css}" />
+	</head>
+	<body>
+		<table width="100%" height="300px">
+			<thead>
+				<tr height="60px">
+					<th>名字</th>
+					<th>时间</th>
+					<th>想说的话</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="diarys : ${list}">
+					<td th:text="${diarys.name}"></td>
+					<td th:text="${diarys.dateDay}"></td>
+					<td th:text="${diarys.text}"></td>
+
+				</tr>
+			</tbody>
+		</table>
+		<a th:href="@{/user/mail}" href="/user/mail" id="s">如果要删除联系管理员</a>
+	</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="utf-8">
+		<title>注销</title>
+		<link rel="stylesheet" href="../static/logout/css/logout.css" th:href="@{~/logout/css/logout.css}" type="text/css" />
+	</head>
+	<body>
+	<p th:text="${msg}" style="color:red;font-size: 20px" align="center"></p>
+		<form name="form" method="get" action="/Logout" th:action="@{/Logout}">
+			<div id="user">
+				请输入用户名
+				<br />
+				<input type="text" id="user1" name="username">
+			</div>
+			<div id="phone">
+				请输入手机号码
+				<br />
+				<input type="text" id="phone1" name="phone">
+			</div>
+			<div id="submit">
+				<input id="submit1" type="submit">
+			</div>
+		</form>
+	</body>
+</html>

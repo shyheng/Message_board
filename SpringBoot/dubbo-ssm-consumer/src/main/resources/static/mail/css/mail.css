@@ -1,0 +1,40 @@
+body{
+	background: url(../img/6.gif);
+	background-size: 100%;
+}
+#title,#center{
+	color: seagreen;
+	font: bold 50px 楷体;
+}
+#title{
+	margin: 50px;
+	margin-left: 600px;
+}
+#center{
+	margin: 50px;
+	margin-left: 600px;
+}
+#centerf{
+	margin-left: 140px;
+}
+#title1{
+	color: skyblue;
+	font: bold 40px 楷体;
+	width: 300px;
+	height: 60px;
+	border-radius:50px 50px 50px 50px;
+}
+#center1{
+	color: skyblue;
+	font: bold 30px 楷体;
+	border-radius:50px 50px 50px 50px;
+}
+#submit{
+	margin-left: 800px;
+}
+#submit1{
+	width: 300px;
+	height: 60px;
+	border-radius:50px 50px 50px 50px;
+	border:solid 5px slateblue;
+}

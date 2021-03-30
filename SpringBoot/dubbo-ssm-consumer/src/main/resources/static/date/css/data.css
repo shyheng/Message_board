@@ -1,0 +1,24 @@
+body{
+	background: url(../img/10.gif);
+	background-size: 100% 900px;
+	color: skyblue;
+	font: bold 30px 宋体;
+}
+
+td{
+	color: springgreen;
+	font: bold 30px 楷体;
+}
+
+a:link {
+	color: #F4A460;
+	text-decoration: none;
+}
+
+a:hover {
+	color: darkorange;
+}
+
+a:visited {
+	color: #F4A460;
+}

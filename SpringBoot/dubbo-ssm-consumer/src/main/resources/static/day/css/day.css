@@ -1,0 +1,50 @@
+body{
+	background: url(../img/11.gif);
+	background-size: 100% 900px;
+	color: skyblue;
+	font: bold 30px 微软雅黑;
+}
+
+input,textarea{
+	height: 50px;
+	width: 200px;
+	border-radius:50px 50px 50px 50px;
+	border:solid 5px sandybrown;
+}
+
+#one{
+	float: left;
+}
+
+#text2{
+	height: 500px;
+	width: 500px;
+}
+
+#textf{
+	margin-left: 200px;
+}
+
+#submit2{
+	color: slateblue;
+	font: bold 20px 楷体;
+	margin-left: 400px;
+	height: 80px;
+	width: 80px;
+}
+
+#name1{
+	margin: 10px;
+}
+
+#date1{
+	margin: 10px;
+}
+
+#submit{
+	color: slateblue;
+	height: 100px;
+	width: 100px;
+	margin-left: 300px;
+	font: bold 20px 楷体;
+}

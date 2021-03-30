@@ -1,0 +1,101 @@
+body{
+	font: bold 20px 宋体;
+	background: url(../img/3.gif);
+	background-size: 100%;
+	color: #F4A460;
+}
+#top {
+	font: bold 15px 微软雅黑;
+	margin-left: 200px;
+	text-align: center;
+	height: 30px;
+	/* background-color: aqua; */
+	width: 1000px;
+}
+
+#left {
+	font: bold 20px 宋体;
+	margin-top: 30px;
+	margin-left: 200px;
+	/* background-color: saddlebrown; */
+	height: 1010px;
+	width: 10%;
+	float: left;
+}
+
+#righttop {
+	margin-bottom: 5px;
+}
+
+#right {
+	text-align: center;
+	float: left;
+	margin-top: 30px;
+	margin-left: 5px;
+}
+
+#right-left {
+	height: 100px;
+	width: 430px;
+	/* background-color: blueviolet; */
+	float: left;
+	margin-right: 5px;
+}
+
+#right-right {
+	height: 100px;
+	width: 410px;
+	/* background-color: brown; */
+	float: left;
+}
+
+#rightcenter {
+	margin-top: 105px;
+	width: 845px;
+	height: 200px;
+	/* background-color: cornflowerblue; */
+}
+
+#message_board{
+	width: 845px;
+	height: 200px;
+}
+
+#rightdown {
+	margin-top: 5px;
+	width: 845px;
+	height: 500px;
+	/* background-color: chartreuse; */
+}
+
+
+a:link {
+	color: #F4A460;
+	text-decoration: none;
+}
+
+a:hover {
+	color: red;
+}
+
+a:visited {
+	color: #F4A460;
+}
+
+#gr {
+	font: bold 20px 宋体;
+	padding: 40px;
+	/* border: solid 5px saddlebrown; */
+}
+
+#gm {
+	font: bold 20px 宋体;
+	padding: 40px;
+	/* border: solid 5px saddlebrown; */
+}
+
+#zx {
+	font: bold 20px 宋体;
+	padding: 40px;
+	/* border: solid 5px saddlebrown; */
+}

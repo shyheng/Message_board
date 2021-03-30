@@ -1,0 +1,8 @@
+com\shy\service\MailService.class
+com\shy\service\RolesService.class
+com\shy\model\Email.class
+com\shy\model\Permissions.class
+com\shy\model\Personal.class
+com\shy\service\PersonalService.class
+com\shy\model\Roles.class
+com\shy\service\PermissionsService.class

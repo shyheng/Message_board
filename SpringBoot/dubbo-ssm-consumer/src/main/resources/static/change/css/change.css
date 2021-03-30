@@ -1,0 +1,36 @@
+body{
+	background: url(../img/5.gif);
+	background-size: 100%;
+}
+#namef,#pd1f,#pd2f{
+	color: sandybrown;
+	font: bold 80px 楷体;
+}
+#user,#pass,#passS{
+	width: 600px;
+	height: 50px;
+	border-radius:50px 50px 50px 50px;
+	border:solid 10px slateblue;
+}
+#submit1{
+	width: 300px;
+	height: 100px;
+	border-radius:50px 50px 50px 50px;
+	border:solid 10px skyblue;
+}
+#name{
+	margin-left: 400px;
+}
+#user{
+	margin-left: 100px;
+}
+#pd1,#pd2{
+	margin-left: 400px;
+}
+#pass,#passS{
+	margin-left: 100px;
+}
+#submit{
+	margin-left: 700px;
+	margin-top: 20px;
+}

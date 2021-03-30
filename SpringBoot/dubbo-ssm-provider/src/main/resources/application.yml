@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/springboot?serverTimezone=GMT%2B8&useSSL=true
+    username: root   #数据库
+    password: 1234 #密码
+
+
+
+  mail:
+    username: shy2210278285@aliyun.com
+    password: zph770413
+    host: smtp.aliyun.com
+

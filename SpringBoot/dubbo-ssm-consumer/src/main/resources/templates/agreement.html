@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="utf-8">
+		<title>用户隐私协议</title>
+		<link rel="stylesheet" type="text/css" href="../static/agreement/css/agreement.css" th:href="@{~/agreement/css/agreement.css}" />
+		<script type="text/javascript">
+			// 定义一个check方法
+			function check() {
+				// 判断是否点击radio
+				if (!document.getElementById("radio").checked) {
+					// 未点击执行
+					alert("您必须同意协议");
+					return false
+				}
+				// 点击返回true
+				return true
+			}
+		</script>
+	</head>
+	<body>
+		<h1>用户隐私协议</h1>
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			以下隐私协议是本游戏对用户隐私保护的许诺，请您务必仔细阅读本协议，以了解我们关于管理您个人信息的情况。
+			本隐私协议的全部条款属于本系统用户服务协议的重要部份之一。为了给您提供更准确、更有针对性的服务，本系统可能会以如下方式，使用您提交的个人信息。
+			但本系统会以高度的勤勉义务对待这些信息，在未征得您许可的情况下，不会将这些信息对外公开或向第三方提供。
+		</p>
+		<h3>一、保有您提供的信息</h3>
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			本系统会在您自愿选择服务或提供信息的情况下收集您的个人信息，并将这些信息进行整合，以便向您提供更好的用户服务。
+			请您在注册时及时、详尽及准确的提供个人资料，并不断更新注册资料，符合及时、详尽准确的要求。所有原始键入的资料将引用为注册资料。
+			如果因注册信息不真实而引起的问题，由您自行承担相应的后果。请您不要将您的帐号、密码转让或出借予他人使用。
+			如您发现您的帐号遭他人非法使用，应立即通知本系统。
+			因黑客行为或用户的保管疏忽导致帐号、密码遭他人非法使用，本系统不承担责任。
+		</p>
+		<h3>二、保有您的使用记录</h3>
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			当您使用本系统的服务时，服务器会自动记录一些信息，包括手机型号、IP地址等。
+			在如下情况下，本系统会遵照您的意愿或法律的规定披露您的个人信息，由此引发的问题将由您个人承担：
+		</p>
+		（1）事先获得您的授权；<br />
+		（2）只有透露你的个人资料，才能提供你所要求的产品和服务；<br />
+		（3）根据有关的法律法规要求； <br />
+		（4）按照相关政府主管部门的要求；<br />
+		（5）为维护本系统的合法权益。<br />
+		（6）您同意让第三方共享资料。<br />
+		（7）我们发现您违反了本系统的服务条款或使用规定。<br />
+		（8）我们需要向代表我们提供产品或服务的公司提供资料（除非我们另行通知你，否则这些公司无权使用你的身份识别资料）。<br />
+		<h3>三、本《隐私政策》不适用于以下情况：</h3>
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			（1）通过我们的服务而接入的第三方服务（包括任何第三方网站）收集的信息。
+			本政策仅适用于我们所收集的信息，并不适用于任何第三方提供的服务或第三方的信息使用规则，
+			我们对任何第三方使用由您提供的信息不承担任何责任；
+			（2）通过在我们服务中进行广告服务的其他公司或机构所收集的信息。
+		</p>
+		<h3>四、隐私权政策的修订</h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		我们可能适时修订本政策的条款，修订政策也是构成本政策的一部分。如修订政策造成您在本政策下权利的实质减少，我们将在修订生效前通过在主页上显著位置提示或向您发送电子邮件或以其他方式通知您。在该种情况下，若您继续使用我们的服务，即表示同意受经修订的本政策的约束。
+		图二 隐私确认一
+		<h3>五、用户如何更正或投诉个人信息</h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		如果您需要查询、修改或更正您的个人信息，或对个人信息保护问题有任何疑问或建议，您可以通过服务支持邮箱：FW1000@foxmail.com 联系我们。
+		<br>链接：<a href="https://www.jianshu.com/p/ab19a9a5b562">https://www.jianshu.com/p/ab19a9a5b562</a>
+		<!-- 创建一个form表单 -->
+		<form action="regedit.html" th:action="@{/user/regedit}" name="form" method="get">
+			<!-- 设置一个单选 -->
+			<input type="radio" id="radio" />
+			<!-- 设置一个span标签不进行换行 -->
+			<span style="font-size: 20px;">我以认真阅读并同意</span>
+			<br />
+			<!-- 判断check()是否返回true，提交并跳转 -->
+			<input type="image" id="image" th:src="@{~/agreement/img/agreen.png}" src="../static/agreement/img/agreen.png" onclick="return check()" />
+		</form>
+	</body>
+</html>

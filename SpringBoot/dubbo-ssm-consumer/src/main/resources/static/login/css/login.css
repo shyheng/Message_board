@@ -1,0 +1,79 @@
+/* 登录页面的背景 */
+body{
+	background: url(../img/2.gif);
+	background-size: 100%;
+}
+/* 更改标题和表单的位置 */
+#top,#input{
+	margin-top: 100px;
+}
+/* 设置标题的内容 */
+#titld{
+	color: #CD2626;
+	font: bold 80px 宋体;
+	text-align: center;
+}
+/* 设置表单内容 */
+#input{
+	text-align: center;
+	font: bold 20px 楷体;
+}
+/* 设置账户和密码文字 */
+#user{
+	color: aqua;
+	font: bold 30px 微软雅黑;	
+}
+/* 设置账户和密码框的内容 */
+#text,#pwd{
+	height: 50px;
+	width: 500px;
+	background-color: #E0FFFF;
+	border:solid 10px aqua;
+	font-size: 30px;
+}
+/* 设置账户框的圆角 */
+#text{
+	border-radius:50px 0px 100px 50px;
+}
+/* 设置密码的圆角 */
+#pwd{
+	border-radius:100px 50px 50px 0px;
+}
+/* 设置超链接文字 */
+#regedit{
+	color: aliceblue;
+	font-size: 30px;
+}
+/* 设置超链接文字未点击前 */
+a:link{
+	color: aliceblue;
+	text-decoration: none;
+}
+/* 设置超链接鼠标悬浮时 */
+a:hover{
+	color: red;
+}
+/* 设置超链接点击后 */
+a:visited{
+	color: aliceblue;
+}
+/* 设置按钮的位置和内容 */
+#submit,#reset{
+	height: 50px;
+	width: 200px;
+	color: white;
+	background-color: crimson;
+	font-size: 20px;
+	border-color: #CD2626;
+}
+/* 设置提交的圆角 */
+#submit{
+	border-radius:50px 50px 0px 0px;
+}
+/* 设置重置的圆角 */
+#reset{
+	border-radius:0px 0px 50px 50px;
+}
+#pwdw{
+	color: #00FFFF;
+}

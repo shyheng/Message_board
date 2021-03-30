@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="utf-8">
+		<title>用户注册</title>
+		<link rel="stylesheet" type="text/css" href="../static/regedit/css/regedit.css" th:href="@{~/regedit/css/regedit.css}" />
+	</head>
+	<body>
+		<!-- 标题 -->
+		<div id="titld">用户注册</div>
+		<!-- 创建一个form表单 -->
+		<form action="/registered" th:action="@{/registered}" name="form" method="get">
+			<div id="form">
+
+				<div id="users">
+					<div id="userf">用&nbsp;&nbsp;&nbsp;户&nbsp;&nbsp;&nbsp;名：</div>
+					<input id="user" name="username" type="text" placeholder="请输入您的用户名"
+						oninvalid="setCustomValidity('请输入正确的用户名')" required />
+				</div>
+
+				<div id="pwdq1">
+					<div id="pwdf1">密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码：</div>
+					<input id="pwd" name="password" type="password" required placeholder="请输入您的密码"
+						oninvalid="setCustomValidity('请输入正确的密码')" />
+				</div>
+
+				<div id="pwdq2">
+					<div id="pwdf2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;确&nbsp;认&nbsp;密&nbsp;码：
+					</div>
+					<input id="pwd1" type="password" name="passwordSalt" placeholder="请再次输入您的密码" oninvalid="setCustomValidity('请输入正确的密码')"
+						required />
+				</div>
+
+				<div id="sex">
+					性&nbsp;&nbsp;&nbsp;&nbsp;别：
+					<input name="sex" type="radio" />男
+					<input name="sex" type="radio" />女
+					<input name="sex" type="radio" checked="checked" />保密
+				</div>
+
+				<div id="hobby">
+					爱&nbsp;&nbsp;&nbsp;&nbsp;好：
+					<input type="checkbox" />写代码
+					<input type="checkbox" />写代码
+					<input type="checkbox" />强迫你写代码
+				</div>
+
+				<div id="select">
+					籍&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;贯：
+					<select id="select1">
+						<option selected="selected">请选择</option>
+						<option>云南</option>
+						<option>北京</option>
+					</select>
+				</div>
+
+				<div id="date">
+					生&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;日：
+					<input type="date"name="birthday" id="date1" />
+				</div>
+
+				<div id="age1">
+					年&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;龄：
+					<input type="number" id="age" max="100" min="1" name="age" placeholder="输入年龄"
+						oninvalid="setCustomValidity('请输入正确的年龄')" />
+				</div>
+
+				<div id="phone">
+					手&nbsp;机&nbsp;号&nbsp;码：
+					<input id="ip" type="number" maxlength="11" name="phone" placeholder="请输入您的手机号码"
+						oninvalid="setCustomValidity('请输入正确的手机号码')" required />
+				</div>
+				<div id="num">
+					手机验证码：<input id="yz" type="number" placeholder="请输入验证码" max="999999" min="0"
+						oninvalid="setCustomValidity('请输入正确的验证码')" required />
+					<a href="#" id="yz1">收不到验证码，点击重新发送</a>
+				</div>
+				
+				<div id="submit1">
+					<input type="submit" id="submit" value="注册" />
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="reset" id="reset" />
+				</div>
+			</div>
+		</form>
+	</body>
+</html>

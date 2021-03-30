@@ -1,0 +1,25 @@
+body{
+	background: url(../img/8.gif);
+	background-size: 100% 810px;
+	color: rosybrown;
+	font: bold 50px 微软雅黑;
+}
+
+#phone1{
+	width: 600px;
+	height: 50px;
+	border-radius:50px 50px 50px 50px;
+	border:solid 10px seashell;
+}
+#phone{
+	margin: 50px;
+}
+#submit1{
+	width: 80px;
+	height: 80px;
+	border-radius:50px 50px 50px 50px;
+	border:solid 5px saddlebrown;
+}
+#submit{
+	margin-left: 800px;
+}

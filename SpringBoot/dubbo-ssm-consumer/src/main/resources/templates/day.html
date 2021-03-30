@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8">
+		<title>记录</title>
+		<link rel="stylesheet" type="text/css" href="../static/day/css/day.css" th:href="@{~/day/css/day.css}" />
+	</head>
+	<body>
+		<div>
+			<div id="one">
+				<form action="/day" method="get" name="form">
+					<div id="date1">
+						请输入日期
+						<input type="date" id="date2" name="dateDay" oninvalid="setCustomValidity('写日期不然不给你看')"
+							required>
+					</div>
+					<div id="name1">
+						想表白的人
+						<input type="text" name="name" id="name2" oninvalid="setCustomValidity('写名不然不给你看')" required />
+					</div>
+					<div id="text1">
+						<div id="textf">
+							写点啥
+						</div>
+						<textarea rows="10" cols="50" id="text2" name="text" oninvalid="setCustomValidity('写点啥不然不给你看')"
+							required></textarea>
+					</div>
+					<div id="submit1">
+						<input type="submit" id="submit2" value="去看看">
+					</div>
+				</form>
+			</div>
+			<div id="tow">
+				<form name="form" action="/dayName" method="get">
+					<div id="she">
+						看看他(她)
+						<input type="text" id="name" name="name">
+					</div>
+					<div id="tijiao">
+						<input type="submit" id="submit" value="让我看看">
+					</div>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

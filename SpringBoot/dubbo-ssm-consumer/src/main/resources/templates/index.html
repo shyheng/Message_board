@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="utf-8">
+		<title>首页</title>
+		<link rel="stylesheet" type="text/css" href="../static/index/css/css.css" th:href="@{~/index/css/css.css}" />
+	</head>
+	<body>
+		<div id="top">
+			<a href="/user/index" th:href="@{/user/index}">首页</a>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a
+				href="https://www.baidu.com">最新技术</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="{/user/log"
+				th:href="@{/user/log}">日志</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="/user/api"
+				th:href="@{/user/api}">开发手册</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="/user/login" th:href="@{/user/login}">退出登录</a>
+		</div>
+		<div id="left">快捷导航栏
+			<div id="gr"><a href="/user/phone" th:href="@{/user/phone}">个人信息</a></div>
+			<div id="gm"><a href="/user/change" th:href="@{/user/change}">更改密码</a></div>
+			<div id="zx"><a href="/user/cancellation" th:href="@{/user/cancellation}">注销</a></div>
+		</div>
+		<div id="right">
+			<div id="righttop">
+				<div id="right-left"><a href="/user/wx" th:href="@{/user/wx}">微信支付</a></div>
+				<div id="right-right"><a href="/user/zfb" th:href="@{/user/zfb}">支付宝支付</a></div>
+			</div>
+			<div id="rightcenter"><a href="/user/qr" th:href="@{/user/qr}">二维码制作</a></div>
+			<div id="message_board"><a href="/user/day" th:href="@{/user/day}">表白墙</a></div>
+			<div id="rightdown"><a href="/user/mail" th:href="@{/user/mail}"> 正常反馈</a></div>
+		</div>
+	</body>
+</html>

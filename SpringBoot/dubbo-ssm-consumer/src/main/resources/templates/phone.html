@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8">
+		<title>确认号码</title>
+		<link rel="stylesheet" type="text/css" href="../static/personal/css/phone.css" th:href="@{~/personal/css/phone.css}" />
+	</head>
+	<body>
+	<p th:text="${msg}" style="color:red;font-size: 20px" align="center"></p>
+		<form name="form" method="get" action="/user/personal" th:action="@{/user/personal}">
+			<div id="phone">
+				请输入电话:
+				<input type="number" id="phone1" name="phone">
+			</div>
+			<div id="submit">
+				<input id="submit1" type="submit">
+			</div>
+		</form>
+	</body>
+</html>

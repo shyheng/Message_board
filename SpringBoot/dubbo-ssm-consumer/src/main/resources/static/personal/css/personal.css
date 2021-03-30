@@ -1,0 +1,17 @@
+body{
+	background: url(../img/9.gif);
+	background-size: 100%;
+	color: white;
+}
+#id1,#sex1,#date1,#age1,#phone1{
+	margin: 50px;
+	margin-left: 700px;
+}
+#id2,#sex2,#date2,#age2,#phone2{
+	color: #00FFFF;
+	font: bold 30px 微软雅黑;
+}
+#id3,#sex3,#date3,#age3,#phone3{
+	color: #6495ED;
+	font: bold 20px 楷体;
+}

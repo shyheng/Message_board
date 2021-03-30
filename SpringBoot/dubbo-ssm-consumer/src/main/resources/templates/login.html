@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="utf-8">
+		<title>登录</title>
+		<link rel="stylesheet" type="text/css" href="../static/login/css/login.css" th:href="@{~/login/css/login.css}"/>
+	</head>
+	<body>
+		<!-- 标题文字 -->
+		<div id="top" align="center">
+			<div id="titld">欢迎进入我的世界</div>
+		</div>
+		<!-- 表单内容 -->
+		<div id="input">
+
+			<p th:text="${msg}" style="color: red;font-size: 20px"></p>
+			<form action="/toLogin" th:action="@{/toLogin}" name="shy1" method="get">
+				<!-- 账户和密码框 -->
+				<div id="user">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;账&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;号：&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码：
+					<br />
+					<input type="text" id="text" name="username" placeholder="  请输入用户名/手机号" />
+					<input type="password" id="pwd" name="password" placeholder="  请输入密码" />
+				</div>
+				<br /><br />
+				<!-- 注册的跳转 -->
+				<div id="regedit">
+					<a th:href="@{/user/agreement}" href="/user/agreement" >注册账户</a>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a th:href="@{/user/mail}" href="/user/mail" id="pwdw">忘记密码</a>
+				</div>
+				<br /><br />
+				<!-- 按钮位置 -->
+				<div>
+					<input id="submit" type="submit" />
+					<input id="reset" type="reset"  />
+				</div>
+			</form>
+		</div>
+	</body>
+</html>

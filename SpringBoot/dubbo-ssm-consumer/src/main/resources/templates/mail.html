@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="utf-8">
+		<title>邮件</title>
+		<link type="text/css" href="../static/mail/css/mail.css" th:href="@{~/mail/css/mail.css}" rel="stylesheet" />
+	</head>
+	<body>
+	<p th:text="${msg}" style="color:red;font-size: 20px" align="center"></p>
+		<form name="form" id="formM" method="get"  action="/mail">
+			<div id="title">
+				标题
+				<input type="text" name="title" id="title1" />
+			</div>
+			<div id="center">
+				<div id="centerf">
+					内容
+				</div>
+				<textarea rows="10" cols="50" id="center1" name="content"></textarea>
+			</div>
+			<div id="submit">
+				<input id="submit1" type="submit">
+			</div>
+		</form>
+	</body>
+</html>

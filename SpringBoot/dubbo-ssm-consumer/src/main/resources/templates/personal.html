@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="utf-8">
+		<title>个人信息</title>
+		<link rel="stylesheet" type="text/css" href="../static/personal/css/personal.css" th:href="@{~/personal/css/personal.css}" />
+	</head>
+	<body>
+		<div id="id1">
+			<div id="id2">
+				您的id
+			</div>
+			<p id="id3" th:text="${personal.id}"></p>
+		</div>
+		<div id="sex1">
+			<div id="sex2">
+				您的性别
+			</div>
+			<p id="sex3" th:text="${personal.sex}"></p>
+		</div>
+		<div id="date1">
+			<div id="date2">
+				您的生日
+			</div>
+			<p id="date3" th:text="${personal.birthday}"></p>
+		</div>
+		<div id="age1">
+			<div id="age2">
+				 您的年龄
+			</div>
+			<p id="age3" th:text="${personal.age}"></p>
+		</div>
+		<div id="phone1">
+			<div id="phone2">
+				您的手机号码
+			</div>
+			<p id="phone3" th:text="${personal.phone}"></p>
+		</div>
+	</body>
+</html>

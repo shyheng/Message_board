@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8">
+		<title>二维码制作</title>
+		<link rel="stylesheet" type="text/css" href="../static/qr/css/qr.css" th:href="@{~/qr/css/qr.css}" />
+	</head>
+	<body>
+	<p th:text="${msg}" style="color:red;font-size: 20px" align="center"></p>
+		<form action="/qr" th:action="@{/qr}" method="get" name="form">
+			<div id="font">
+				先开启<a href="/fwq" style="text-decoration: none" target="_top">服务器</a> ，输入数据，然后提交，清理缓存，刷新就有了
+			</div>
+			<div id="textf">
+				二维码内容（文字或者URL）:
+				<input type="text" required id="text" name="content">
+			</div>
+			<div id="ip">
+				ip地址，服务器的:
+				<input type="text" required id="ip1" name="ip">
+			</div>
+			<div id="submit">
+				<input id="submit1" type="submit">
+			</div>
+			<div id="image">
+				<img src="../static/images/shy.png" id="image1" th:src="@{~/images/shy.png}">
+			</div>
+			
+		</form>
+	</body>
+</html>

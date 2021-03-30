@@ -1,0 +1,34 @@
+body{
+	background: url(../img/2.gif);
+	background-size: 100%;
+}
+#user,#phone{
+	color: slategray;
+	font: bold 60px 微软雅黑;
+}
+#user1,#phone1{
+	width: 400px;
+	height: 60px;
+
+}
+#submit1{
+	width: 60px;
+	height: 60px;
+}
+#user1,#phone1{
+	border-radius:50px 50px 50px 50px;
+	border:solid 10px sandybrown;
+}
+#submit1{
+	border-radius:50px 50px 50px 50px;
+	border:solid 5px slateblue;
+}
+#user{
+	margin-left: 600px;
+}
+#phone{
+	margin-left: 500px;
+}
+#submit{
+	margin-left: 1000px;
+}

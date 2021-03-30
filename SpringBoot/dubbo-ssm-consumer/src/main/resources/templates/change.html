@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="utf-8">
+		<title>更改密码</title>
+		<link rel="stylesheet" href="../static/change/css/change.css" th:href="@{~/change/css/change.css}" type="text/css"/>
+	</head>
+	<body>
+		<p th:text="${msg}" style="color:red;font-size: 20px" align="center"></p>
+		<form name="form" action="/change" th:action="@{/change}" method="get">
+			<div id="name">
+				<div id="namef">
+					输入您需要更改的用户名
+				</div>
+				<input name="username" id="user" type="text">
+			</div>
+			<div id="pd1">
+				<div id="pd1f">
+					输入您新密码
+				</div>
+				<input name="password" id="pass" type="password">
+			</div>
+			<div id="pd2">
+				<div id="pd2f">
+					确认密码
+				</div>
+				<input name="passwordSalt" id="passS" type="password">
+			</div>
+			<div id="submit">
+				<input id="submit1" type="submit">
+			</div>
+		</form>
+	</body>
+</html>
